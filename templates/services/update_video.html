@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+<h1>{% block title %}Upload Video{% endblock %}</h1>
+
+
+{% block content %}
+  <form method="post">
+    <label for="video_link">Video Link:</label>
+    <input name="video_link" id="video_link">
+    <input type="submit" value="upload">
+  </form>
+{% endblock %}

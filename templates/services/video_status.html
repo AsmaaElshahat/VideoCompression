@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+<h1>{% block title %}Video Status{% endblock %}</h1>
+
+
+{% block content %}
+    {% if not status %}
+        <p>Something went Wrong due to:</p>
+        <p> {{ msg }} </p>
+    {% else %}
+        <p>Your Video ID:</p>
+        <p> {{ msg }}</p>
+        <p>Status:</p>
+        <p> {{ status }}</p>
+    {% endif %}
+{% endblock %}
